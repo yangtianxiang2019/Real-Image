@@ -1,0 +1,534 @@
+[2022-12-08 02:09:34][ERROR][views.py:38:process_image]：the JSON object must be str, bytes or bytearray, not QueryDict
+[2022-12-08 02:09:34][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 16, in process_image
+    data = json.loads(request.POST)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not QueryDict
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 40, in process_image
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TypeError is not JSON serializable
+[2022-12-08 02:09:35][ERROR][basehttp.py:187:log_message]："GET /process/process_image HTTP/1.1" 500 95044
+[2022-12-08 02:10:06][ERROR][views.py:38:process_image]：the JSON object must be str, bytes or bytearray, not QueryDict
+[2022-12-08 02:10:06][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 16, in process_image
+    data = json.loads(request.POST)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not QueryDict
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 40, in process_image
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TypeError is not JSON serializable
+[2022-12-08 02:10:06][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 94457
+[2022-12-08 02:11:20][ERROR][views.py:38:process_image]：'WSGIRequest' object has no attribute 'boby'
+[2022-12-08 02:11:20][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 16, in process_image
+    data = json.loads(request.boby)
+AttributeError: 'WSGIRequest' object has no attribute 'boby'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 40, in process_image
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AttributeError is not JSON serializable
+[2022-12-08 02:11:20][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 89660
+[2022-12-08 02:12:01][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view process.views.process_image didn't return an HttpResponse object. It returned None instead.
+[2022-12-08 02:12:01][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 64708
+[2022-12-08 02:13:39][ERROR][views.py:38:process_image]：'file'
+[2022-12-08 02:13:39][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 17, in process_image
+    print(data['file'])
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 40, in process_image
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type KeyError is not JSON serializable
+[2022-12-08 02:13:39][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 97689
+[2022-12-08 02:14:00][ERROR][views.py:38:process_image]：'dict' object has no attribute 'file'
+[2022-12-08 02:14:00][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 17, in process_image
+    print(data.file)
+AttributeError: 'dict' object has no attribute 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 40, in process_image
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AttributeError is not JSON serializable
+[2022-12-08 02:14:00][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 98260
+[2022-12-08 02:14:32][ERROR][views.py:38:process_image]：'dict' object has no attribute 'data'
+[2022-12-08 02:14:32][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 17, in process_image
+    print(data.data.file)
+AttributeError: 'dict' object has no attribute 'data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 40, in process_image
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AttributeError is not JSON serializable
+[2022-12-08 02:14:32][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 98270
+[2022-12-08 02:17:36][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view process.views.process_image didn't return an HttpResponse object. It returned None instead.
+[2022-12-08 02:17:36][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 64708
+[2022-12-08 02:18:09][ERROR][views.py:38:process_image]：'file111'
+[2022-12-08 02:18:09][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 17, in process_image
+    print(data['data']['file111'])
+KeyError: 'file111'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 40, in process_image
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type KeyError is not JSON serializable
+[2022-12-08 02:18:09][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 97761
+[2022-12-08 02:25:21][ERROR][views.py:41:process_image]：argument of type 'builtin_function_or_method' is not iterable
+[2022-12-08 02:25:21][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 18, in process_image
+    if 'data' not in data.keys:
+TypeError: argument of type 'builtin_function_or_method' is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 43, in process_image
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TypeError is not JSON serializable
+[2022-12-08 02:25:21][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 98398
+[2022-12-08 02:31:23][ERROR][views.py:44:process_image]：'dict' object has no attribute 'data'
+[2022-12-08 02:31:23][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 20, in process_image
+    data = requestBody.data
+AttributeError: 'dict' object has no attribute 'data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 46, in process_image
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AttributeError is not JSON serializable
+[2022-12-08 02:31:23][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 99096
+[2022-12-08 02:51:39][ERROR][views.py:48:process_image]：Settings already configured.
+[2022-12-08 02:51:39][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 35, in process_image
+    image_url = os.path.join(settings.configure().BASE_IMAGE_DIR,
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/conf/__init__.py", line 129, in configure
+    raise RuntimeError("Settings already configured.")
+RuntimeError: Settings already configured.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 49, in process_image
+    return errResponse(e)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 54, in errResponse
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type RuntimeError is not JSON serializable
+[2022-12-08 02:51:39][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 133461
+[2022-12-08 02:53:15][ERROR][views.py:48:process_image]：[Errno 2] No such file or directory: '/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/real_image/image/1670467995.jpg'
+[2022-12-08 02:53:15][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 37, in process_image
+    with open(image_url, 'wb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/real_image/image/1670467995.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 49, in process_image
+    return errResponse(e)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 54, in errResponse
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type FileNotFoundError is not JSON serializable
+[2022-12-08 02:53:15][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 129957
+[2022-12-08 03:01:25][ERROR][views.py:48:process_image]：'float' object has no attribute 'random'
+[2022-12-08 03:01:25][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 36, in process_image
+    '%s.jpg' % int(time.time() . random.randint(1, 1000)))
+AttributeError: 'float' object has no attribute 'random'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 49, in process_image
+    return errResponse(e)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 54, in errResponse
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AttributeError is not JSON serializable
+[2022-12-08 03:01:25][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 129450
+[2022-12-08 03:04:05][ERROR][views.py:49:process_image]：not enough arguments for format string
+[2022-12-08 03:04:05][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 37, in process_image
+    '%s_%s.jpg' % int(time.time()) % random.randint(1, 1000))
+TypeError: not enough arguments for format string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 50, in process_image
+    return errResponse(e)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 55, in errResponse
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TypeError is not JSON serializable
+[2022-12-08 03:04:05][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 129172
+[2022-12-08 03:05:47][ERROR][views.py:49:process_image]：[Errno 2] No such file or directory: '/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/real_image/imageinput/1670468747_970.jpg'
+[2022-12-08 03:05:47][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 38, in process_image
+    with open(image_url, 'wb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/real_image/imageinput/1670468747_970.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 50, in process_image
+    return errResponse(e)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 55, in errResponse
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type FileNotFoundError is not JSON serializable
+[2022-12-08 03:05:47][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 130044
+[2022-12-08 03:30:23][ERROR][views.py:54:process_image]：unhashable type: 'dict'
+[2022-12-08 03:30:23][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 50, in process_image
+    return response('success', {
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 69, in response
+    res = {"status": "1", "message": e, data: data}
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 55, in process_image
+    return errResponse(e)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 64, in errResponse
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TypeError is not JSON serializable
+[2022-12-08 03:30:23][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 142722
+[2022-12-08 03:32:21][ERROR][views.py:52:process_image]：unhashable type: 'dict'
+[2022-12-08 03:32:22][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 50, in process_image
+    return response('success', {'file': 'image/'})
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 67, in response
+    res = {"status": "1", "message": e, data: data}
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 53, in process_image
+    return errResponse(e)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 62, in errResponse
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TypeError is not JSON serializable
+[2022-12-08 03:32:22][ERROR][basehttp.py:187:log_message]："POST /process/process_image HTTP/1.1" 500 142877
+[2022-12-08 04:11:02][WARNING][log.py:241:log_response]：Not Found: /process/media/
+[2022-12-08 04:11:02][WARNING][basehttp.py:187:log_message]："GET /process/media/ HTTP/1.1" 404 2660
+[2022-12-08 04:11:22][WARNING][log.py:241:log_response]：Not Found: /process/media/input
+[2022-12-08 04:11:22][WARNING][basehttp.py:187:log_message]："GET /process/media/input HTTP/1.1" 404 2675
+[2022-12-08 04:11:37][WARNING][log.py:241:log_response]：Not Found: /process/media/1670470045_302.jpeg
+[2022-12-08 04:11:37][WARNING][basehttp.py:187:log_message]："GET /process/media/1670470045_302.jpeg HTTP/1.1" 404 2804
+[2022-12-08 04:31:43][ERROR][views.py:52:process_image]：Expecting value: line 1 column 1 (char 0)
+[2022-12-08 04:31:44][ERROR][log.py:241:log_response]：Internal Server Error: /process/process_image
+Traceback (most recent call last):
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 20, in process_image
+    requestBody = json.loads(request.body)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 53, in process_image
+    return errResponse(e)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/django/real_image/process/views.py", line 62, in errResponse
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type JSONDecodeError is not JSON serializable
+[2022-12-08 04:31:49][ERROR][basehttp.py:187:log_message]："GET /process/process_image HTTP/1.1" 500 105944
