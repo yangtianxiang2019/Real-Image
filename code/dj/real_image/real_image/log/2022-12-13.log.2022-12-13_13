@@ -1,0 +1,126 @@
+[2022-12-13 12:57:00][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes 0 positional arguments but 1 was given
+[2022-12-13 12:57:01][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes 0 positional arguments but 1 was given
+[2022-12-13 12:57:06][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes 0 positional arguments but 1 was given
+[2022-12-13 12:57:36][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes 0 positional arguments but 1 was given
+[2022-12-13 12:57:45][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes 0 positional arguments but 1 was given
+[2022-12-13 12:57:46][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes 0 positional arguments but 1 was given
+[2022-12-13 12:57:49][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes 0 positional arguments but 1 was given
+[2022-12-13 12:57:54][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes 0 positional arguments but 1 was given
+[2022-12-13 12:58:24][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes 0 positional arguments but 1 was given
+[2022-12-13 12:58:55][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes 0 positional arguments but 1 was given
+[2022-12-13 12:59:03][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes 0 positional arguments but 1 was given
+[2022-12-13 12:59:04][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes 0 positional arguments but 1 was given
+[2022-12-13 12:59:09][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes 0 positional arguments but 1 was given
+[2022-12-13 12:59:37][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/monstar/Desktop/yang/python/real-image/code/dj/real_image/process/middleware.py", line 14, in __call__
+    response["Content-Disposition"] = 'attachment'
+TypeError: 'str' object does not support item assignment
+[2022-12-13 12:59:37][WARNING][log.py:241:log_response]：Not Found: /favicon.ico
+[2022-12-13 13:03:16][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-12-13 13:04:28][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'NoneType' object has no attribute 'get'
+[2022-12-13 13:06:05][ERROR][log.py:241:log_response]：Internal Server Error: /process/test
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'NoneType' object has no attribute 'get'

@@ -7,6 +7,7 @@ from . import views
 
 
 urlpatterns = [
+    path('test', views.test, name='test'),
     path('process_image', views.process_image, name='process_image'),
     re_path(r'^media/(?P<path>.*)$', serve, {
             'document_root': settings.BASE_IMAGE_DIR + '/output',

@@ -14,6 +14,10 @@ from django.conf import settings
 logger = logging.getLogger('django')
 
 
+def test(request):
+    return 'this is a test'
+
+
 @csrf_exempt
 def process_image(request):
     try:
@@ -36,9 +40,11 @@ def process_image(request):
 
         b64_data = split_data[1]
         data = base64.b64decode(b64_data)
-        file_name = '%s_%s.%s' % (int(time.time()), random.randint(1, 1000), image_suffix(split_data[0]))
+        file_name = '%s_%s.%s' % (
+        int(time.time()), random.randint(1, 1000), image_suffix(split_data[0]))
         today_path = str(datetime.date.today()) + '/'
-        input_image_path = os.path.join(settings.BASE_IMAGE_DIR + '/input/' + today_path, file_name)
+        input_image_path = os.path.join(
+            settings.BASE_IMAGE_DIR + '/input/' + today_path, file_name)
         output_image_path = settings.BASE_IMAGE_DIR + '/output/' + today_path
 
         if not os.path.exists(settings.BASE_IMAGE_DIR + '/input/' + today_path):
