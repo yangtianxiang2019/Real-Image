@@ -167,5 +167,5 @@ LOGGING = {
     },
 }
 
-PYTHON_PATH = 'D:/python3/python'
-REAL_ESRGAN_PATH = 'D:/Real-Image-main/code/Real-ESRGAN'
+PYTHON_PATH = '/root/miniconda3/bin/python3.9'
+REAL_ESRGAN_PATH = '/var/www/codeReal-Image-main/code/Real-ESRGAN'
