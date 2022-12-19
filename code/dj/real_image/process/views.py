@@ -54,12 +54,14 @@ def process_image(request):
 
         with open(input_image_path, 'wb') as f:
             f.write(data)
-        print(settings.REAL_ESRGAN_PATH)
-        os.system(
+
+        rs = os.system(
             'cd ' + settings.REAL_ESRGAN_PATH + ' && '
             + settings.PYTHON_PATH + ' inference_realesrgan.py -n RealESRGAN_x4plus -i '
             + input_image_path +
             ' -o ' + output_image_path + ' --suffix "" --fp32')
+        if rs != 0:
+            return errResponse('python图片处理程序失败')
         return response('success', {'file': '/process/media/' + today_path + file_name})
     except Exception as e:
         logger.error(e)
